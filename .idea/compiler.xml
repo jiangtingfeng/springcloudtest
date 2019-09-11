@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="productdataservice" />
         <module name="productviewservicefeign" />
+        <module name="configservice" />
         <module name="eurekaServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="configservice" target="1.8" />
       <module name="eurekaServer" target="1.8" />
       <module name="productdataservice" target="1.8" />
       <module name="productviewservicefeign" target="1.8" />
@@ -20,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configservice" options="-parameters" />
       <module name="eurekaServer" options="-parameters" />
       <module name="productdataservice" options="-parameters" />
       <module name="productviewservicefeign" options="-parameters" />
