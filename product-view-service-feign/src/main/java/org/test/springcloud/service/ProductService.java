@@ -9,6 +9,7 @@ import java.util.List;
 
 @Service
 public class ProductService {
+
     @Autowired
     ProductClientFeign productClientFeign;
     public List<Product> listProducts(){
