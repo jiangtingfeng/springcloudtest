@@ -51,5 +51,6 @@
         <module>product-service-service</module>
         <module>product-view-service-feign</module>
         <module>config-service</module>
+        <module>hystrix-dashboard</module>
     </modules>
 </project>
