@@ -25,6 +25,12 @@ import java.util.concurrent.TimeoutException;
 public class ProductViewServiceFeignApplication {
 
     public static void main(String[] args) {
+        //判断 rabiitMQ 是否启动
+        int rabbitMQPort = 5672;
+        if(NetUtil.isUsableLocalPort(rabbitMQPort)) {
+            System.err.printf("未在端口%d 发现 rabbitMQ服务，请检查rabbitMQ 是否启动", rabbitMQPort );
+            System.exit(1);
+        }
         int port = 0;
         int defaultPort = 8012;
         Future<Integer> future = ThreadUtil.execAsync(() ->{
@@ -46,7 +52,7 @@ public class ProductViewServiceFeignApplication {
             return p;
         });
         try{
-            port=future.get(5, TimeUnit.SECONDS);
+            port=future.get(5,TimeUnit.SECONDS);
         }
         catch (InterruptedException | ExecutionException | TimeoutException e){
             port = defaultPort;
