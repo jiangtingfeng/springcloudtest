@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eurekaServer" />
         <module name="productdataservice" />
         <module name="turbine" />
         <module name="hystrix-dashboard" />
         <module name="productviewservicefeign" />
         <module name="configservice" />
+        <module name="eurekaServer" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="productviewservicefeign" target="1.8" />
       <module name="springcloud" target="1.8" />
       <module name="turbine" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -32,6 +34,7 @@
       <module name="productdataservice" options="-parameters" />
       <module name="productviewservicefeign" options="-parameters" />
       <module name="turbine" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>

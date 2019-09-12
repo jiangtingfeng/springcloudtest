@@ -10,6 +10,7 @@ public class AccessViewService {
         while(true) {
             ThreadUtil.sleep(1000);
             access(8012);
+            access(8013);
         }
 
     }

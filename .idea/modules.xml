@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/product-view-service-feign/productviewservicefeign.iml" filepath="$PROJECT_DIR$/product-view-service-feign/productviewservicefeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/turbine/turbine.iml" filepath="$PROJECT_DIR$/turbine/turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
     </modules>
   </component>
 </project>
