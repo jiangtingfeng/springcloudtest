@@ -26,3 +26,9 @@ rabbitmq:
   port: 5672
   username: guest
   password: guest
+logging:
+  config:
+    root: warn
+    org.test.springcloud: trace
+  pattern:
+    console: '%p%m%n'
