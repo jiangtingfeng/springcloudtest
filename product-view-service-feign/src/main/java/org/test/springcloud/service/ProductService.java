@@ -12,7 +12,12 @@ public class ProductService {
 
     @Autowired
     ProductClientFeign productClientFeign;
+
     public List<Product> listProducts(){
         return productClientFeign.listProdcuts();
+}
+
+    public int insert() {
+        return productClientFeign.insert();
     }
 }

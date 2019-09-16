@@ -29,4 +29,12 @@ public class ProductController {
         return "products";
     }
 
+    @RequestMapping("/addProduct")
+    public Object insert(Model m) {
+        List<Product> ps = productService.listProducts();
+        m.addAttribute("version", version);
+        m.addAttribute("ps", ps);
+        return "products";
+    }
+
 }

@@ -3,7 +3,6 @@ package org.test.springcloud.util;
 import java.util.HashMap;
 
 import cn.hutool.http.HttpUtil;
-import org.springframework.util.StringUtils;
 
 public class FreshConfigUtil {
 
